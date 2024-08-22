@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Bootstrap</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .content-section {
+            padding: 50px 0;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .hero-section {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero-section img {
+            width: 100%;
+            height: auto;
+        }
+        .hero-section .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(0, 0, 0); /* Ajusta el color según tus preferencias */
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            cursor: pointer;
+        }
+        .hero-section .btn:hover {
+            background-color: darkorange; /* Efecto hover */
+            color: black;
+        }
+        .texto:hover{
+            color: orange;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+        .controls1, .controls2, .extra, #textoo {
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            width: 70%; 
+            margin-left: 0; 
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        #textoo {
+            height: 100px;
+        }
+        .boton2 {
+            background-color: rgb(211, 4, 4);
+            border: 2px solid black;
+            padding: 20px;
+            font-size: 15px;
+            margin-left: 0; 
+            cursor: pointer;
+        }
+        .boton2:hover {
+            background-color: blue;
+        }
+        h1 {
+            text-align: center; 
+        }
+    </style>
+</head>
+<body>
+
+<!-- Sección Hero -->
+<div class="hero-section">
+    <img src="web 1/imagenes/header.jpg" alt="Imagen de fondo">
+    <button class="btn">Read More</button>
+</div>
+
+<!-- Sección de Contenido -->
+<div class="container content-section">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="web 1/imagenes/1.jpg" alt="">
+            <div class="texto">
+                <p>How to clean your fridge and freezer inside and out: tips and tricks to keep your fridge sparkling clean</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="web 1/imagenes/2.jpg" alt="">
+            <div class="texto">
+                <p>Dark chocolate and peanut cookies: easy recipe for crunchy and salty contrast</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="web 1/imagenes/3.jpg" alt="">
+            <div class="texto">
+                <p>Best stew potatoes: the most classic recipe for a dish that never fails</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Contact Us</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" class="controls1" placeholder="YOUR NAME">
+            <input type="text" class="controls2" placeholder="YOUR NUMBER">
+            <input type="text" class="extra" placeholder="YOUR NAME">
+            <textarea name="" id="textoo" cols="30" rows="10"></textarea>
+            <br><br>
+            <input type="submit" class="boton2" value="SEND MESSAGE">
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
